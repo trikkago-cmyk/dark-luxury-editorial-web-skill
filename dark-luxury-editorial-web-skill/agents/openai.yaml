@@ -1,0 +1,7 @@
+interface:
+  display_name: "Dark Luxury Travel Web"
+  short_description: "Turn travel text into premium editorial travel pages"
+  default_prompt: "Use $dark-luxury-editorial-web to turn this travel guide into a restrained, interactive editorial webpage with seamless Hero transition, correct imagery, and optional music."
+
+policy:
+  allow_implicit_invocation: true
