@@ -1,5 +1,7 @@
 [简体中文](./README.md)
 
+![Dark Luxury Editorial Web Hero](./assets/screenshots/hero-desktop.png)
+
 # Dark Luxury Editorial Web Skill
 
 Not for pasting travel notes onto a webpage.  
@@ -20,6 +22,16 @@ If you have ever tried to make a travel microsite, you have probably run into so
 
 This skill is not just “one more page generator.”  
 It turns those recurring failure points into explicit rules and a reusable workflow.
+
+## Highlights
+
+- Foolproof: give it a few trip requirements, and it delivers a full route guide plus a publishable site
+- Beautiful: editorial magazine aesthetics with nearly zero “AI UI” feel, plus built-in ambient music
+
+## Who It’s For
+
+- Families planning trips who want it to be effortless but still polished
+- Independent travel agencies or small studios showcasing curated routes
 
 ## When Would You Actually Use It?
 
