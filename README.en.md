@@ -1,14 +1,27 @@
 [简体中文](./README.md)
 
-![Dark Luxury Editorial Web Hero](./assets/screenshots/hero-desktop.png)
+![Dark Luxury Itinerary Skill Hero](./assets/screenshots/hero-desktop.png)
 
-# Dark Luxury Editorial Web Skill
+# Dark Luxury Itinerary Skill
 
-**What is it?**  
-An all-in-one skill that turns trip requirements into a polished route guide and a shareable editorial travel page.  
-One-line promise: give it your travel needs, get a beautiful itinerary site in one go.
+Have you ever had one of those moments?
 
-**Product Screens**
+You already did the hard part. The route is planned, the restaurants are picked, the hotel is decided, the notes are written. But the final thing you send out still feels like a rushed document dump. The information is there, but the feeling is gone.
+
+Or maybe you only have the outline in your head: from where to where, how many days, what mood you want, roughly what budget you can accept. And the moment you realize you still need to build the route guide, source images, shape the page, and make it all look good, the energy drops immediately.
+
+If that sounds familiar, this skill is for you.
+
+It turns trip requirements, existing itineraries, and first-person travel memoirs into a travel page that actually feels worth sharing.
+
+In one sentence: you tell it where the trip is going, and it turns that trip into a polished, editorial-style microsite.
+
+What makes it easy to love is pretty simple:
+
+- Foolproof: give it a travel brief, and it can generate both the route guide and the page
+- Beautiful: editorial magazine aesthetics, almost zero AI-UI feel, and optional ambient background music
+
+Here is what it looks like in the wild.
 
 ## Real Outputs
 
@@ -57,27 +70,80 @@ These are real project outputs from the benchmark family and cold-start validati
   </tr>
 </table>
 
-## What Problems Does It Solve?
+If you have ever built travel materials for yourself, your family, or a client, you probably know these small frustrations:
 
-**Scenario: You have content, but the page still feels generic**  
-Solution: structure, imagery, tags, music, and layout are aligned in one pass so it stops looking like a template.
+- the itinerary is finished, but what you share still looks like a long document
+- you want it to feel premium, but all your time disappears into image hunting, layout tweaking, and mobile fixes
+- you only wanted a route page people could actually read and forward, but it slowly turned into a template-looking site
+- every new destination means rebuilding the same structure, prompts, and visual logic all over again
 
-**Scenario: You only have intent, not a route guide**  
-Solution: input “from/to, days, mood, budget” and it builds the route guide before generating the page.
+This skill exists to absorb that repeated work.
 
-**Highlights**
-- Foolproof: simple inputs generate both the route guide and a publishable site
-- Beautiful: editorial magazine aesthetics with almost zero “AI UI” feel, plus built-in ambient music
+It helps align route structure, visual pacing, imagery, tag semantics, and music interaction first, then turns them into a travel site that is actually usable.
 
-**Who It’s For**
-- Families planning trips who want it effortless but polished
-- Independent travel agencies or small studios showcasing curated routes
+It is especially helpful for:
 
-## How Do I Use It?
+- family trip planning that should feel polished without becoming a design project
+- independent travel agencies or small studios presenting curated routes
+- memoir, diary, and guide writers who want their content to feel shareable instead of merely readable
 
-1. Install `dist/dark-luxury-editorial-web-skill.skill`
-2. Invoke the skill in Cursor and provide your trip requirements or existing guide
-3. Generate and deploy the travel page
+## How To Start
+
+The good news: in most setups, you do not need to start with the `.skill` package at all.
+
+If you just want the fastest path, wire these instructions into the agent you already use, then prompt it with something like:
+
+> Build a two-day travel route-guide site from Wuhan to Xiangyang, mobile-first, with an editorial look, locally sourced images, and a gentle ambient BGM.
+
+Here are the most practical ways to use it.
+
+### Cursor
+
+If you use Cursor, the easiest path is usually not package installation. It is project-level rules.
+
+- Simple path: put the condensed instructions in `AGENTS.md` at the project root
+- Rules path: place them in `.cursor/rules/` as a reusable `.mdc` rule
+- CLI path: `cursor-agent` reads the same `.cursor/rules`, and also understands root-level `AGENTS.md` and `CLAUDE.md`
+
+So the same guidance can usually work in both Cursor IDE and Cursor CLI.
+
+### Claude Code
+
+Claude Code does not need a native skill installer to make this useful.
+
+- Simplest path: put the core instructions in your project `CLAUDE.md`
+- Better for repetition: create `.claude/commands/travel-web.md`, then call it with `/travel-web`
+- Better for teams: commit `CLAUDE.md` and `.claude/commands/` into the repo
+
+That way, you do not have to retype the whole prompt every time.
+
+### OpenCode
+
+OpenCode works especially well when this is turned into a dedicated agent.
+
+- create `.opencode/agents/travel-web.md`
+- place the core travel-web instructions there
+- call it in chat with `@travel-web`
+
+If you want the behavior to stay with the project, this is a very light setup.
+
+### OpenClaw
+
+OpenClaw is the closest to a native skill workflow.
+
+- copy `dark-luxury-editorial-web-skill/` into `<workspace>/skills/`
+- or place it in `~/.openclaw/skills/` for system-wide reuse
+- use `dist/dark-luxury-editorial-web-skill.skill` when you want a packaged artifact for sharing or backup
+
+For OpenClaw, the real source of truth is the skill folder itself. The `.skill` file is the packaged form.
+
+### If You Just Want To Copy Something And Go
+
+Start here:
+
+- `dark-luxury-editorial-web-skill/SKILL.md`
+
+You can treat it as the master prompt and adapt it into `AGENTS.md`, `CLAUDE.md`, `.cursor/rules/`, `.opencode/agents/`, or an OpenClaw `skills/` directory, depending on the app you use.
 
 ## What’s In This Repository?
 
