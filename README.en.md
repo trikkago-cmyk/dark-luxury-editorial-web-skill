@@ -23,6 +23,20 @@ What makes it easy to love is pretty simple:
 - Smarter planning: it does multi-angle search, checks information confidence, and sequences the route with maps and weather instead of just stitching together a few guides
 - Better atmosphere: it matches images to specific sections and proactively suggests Pixabay-friendly music directions instead of leaving the page emotionally empty
 
+## What Changed In 2.0?
+
+If 1.0 felt like a skill that was very good at making beautiful travel pages,
+2.0 feels much closer to a real travel creative partner that can carry the whole process from idea to finished microsite.
+
+This update mainly upgrades three things:
+
+- Better planning, not just better presentation: you no longer need to arrive with a fully written route guide. If you only know the origin, destination, duration, budget, and preferred travel rhythm, 2.0 can now choose a planning template, run multi-angle research, validate places on maps, estimate major hops, adapt the route with weather, and only then turn the trip into a page.
+- Better aesthetic judgment: it no longer treats “factually correct” as good enough. The rules we refined through real projects are now baked into the skill: Hero-to-second-screen continuity, breathing room, timeline node quality, vinyl-player consistency, section-matched imagery, and music mood suggestions. In short, it is better at avoiding generic AI-UI drift.
+- Better long-term reusability: the skill itself was restructured around progressive disclosure. The main file is now lighter and acts as an entry router, while planning, writing, visual, media, and QA details live in references that are loaded only when needed. That makes the skill easier for other agents and future projects to use reliably.
+
+In one sentence, 2.0 is no longer only a “turn travel notes into a webpage” skill.
+It is now a fuller workflow for understanding travel intent, planning the trip, choosing assets, and shipping the final editorial site.
+
 Here is what it looks like in the wild.
 
 ## Real Outputs
@@ -153,4 +167,4 @@ If your tool supports direct skill import, you can also use:
 
 ## Current Version
 
-- `v1.0.0`
+- `v2.0.0`
