@@ -2,6 +2,18 @@
 
 Use this reference when building a new travel website from 0 to 1 and you need to make sure the result belongs to the same visual family as the existing shipped projects.
 
+## Quick map
+
+- family traits and visual baseline
+  - `What these projects have in common`
+- pass / fail criteria
+  - `Cold-start pass criteria`
+- imagery expectations
+  - `Asset minimum for route-guide pages`
+  - `Asset storage rule`
+- how to operationalize the benchmark
+  - `Workflow implication`
+
 ## Benchmark sites
 
 - Xishuangbanna route guide: `https://dark-luxury-travel-itinerary.vercel.app`

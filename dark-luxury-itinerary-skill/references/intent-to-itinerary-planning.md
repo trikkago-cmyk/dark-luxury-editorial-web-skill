@@ -2,6 +2,28 @@
 
 Use this reference when the user does not already have a finished route guide and instead wants Codex to plan the trip from 0 to 1.
 
+## Quick map
+
+- intake and template selection
+  - `1. Intake checklist`
+  - `1.5. Template selection by user profile`
+  - `1.6. Template resolution rules`
+  - `1.7. Template selection matrix`
+  - `1.8. Planning artifact contract`
+- research and recommendation quality
+  - `2. Research order`
+  - `Search template pack`
+  - `Food and lodging recommendation contract`
+  - `Required research record`
+- route logic
+  - `Route topology and loop judgment`
+  - `Map validation contract`
+  - `Map provider strategy`
+- weather handling
+  - `Weather adaptation contract`
+- final route-guide schema
+  - `4. Minimum route-guide schema`
+
 Typical prompts:
 
 - “从武汉去西双版纳，做一个七天六夜的路书”
@@ -29,6 +51,13 @@ The same destination should be planned differently for:
 - one-base trip vs. multi-hotel / moving-base trip
 
 Treat the chosen template as a planning scaffold, not a visual template.
+
+Important separation:
+
+- planning can be rigorous backstage
+- visible copy cannot sound like a planner report
+- the reader should feel gently guided, not audited
+- do not pour template names, confidence labels, or system phrasing straight onto the page
 
 ## 1. Intake checklist
 
@@ -290,6 +319,9 @@ That artifact must include:
 - weather adaptation summary
 - day-shape reasoning
 - section skeleton for the final guide
+
+This artifact is backstage only.
+Its job is to support a final page that feels warm, graceful, and human rather than technical.
 
 ## 2. Research order
 
@@ -627,6 +659,12 @@ If an external skill is unavailable or blocked:
 - record the fallback in the research record
 - do not downgrade the route into unsupported guesswork
 
+Front-end rule:
+
+- keep this rigor backstage unless the user explicitly asks to inspect the route logic
+- when route order is surfaced on the page, translate it into human language
+- avoid visible labels such as `map validation`, `topology`, `confidence`, or `provider strategy`
+
 ### Template-specific scoring and sequencing
 
 For every candidate stop, evaluate:
@@ -844,6 +882,12 @@ Provider strategy:
   - recommended install: `npx skills add <repo-or-registry> --skill <skill-name> -g -y`
 - fallback: lightweight tools such as `chandima/agent-skills@weather`
 - if no external skill is usable, use official meteorology or stable forecast websites and document the fallback
+
+Front-end rule:
+
+- weather reasoning should usually dissolve into itinerary language
+- prefer `如果下午开始下雨，就把湖边那段换成茶馆` over explicit forecast jargon
+- do not render the page as a weather dashboard unless the user explicitly wants a utility-style product view
 
 ## 3. Xiaohongshu usage rule
 

@@ -2,6 +2,26 @@
 
 Use this reference when the user gives raw travel text, a doc, a notion page, a feishu export, a partially finished site, or a high-level travel intention and wants a finished editorial travel webpage.
 
+## Quick map
+
+- protect project boundaries
+  - `1. Protect the project boundary first`
+- normalize source material and choose the content mode
+  - `2. Normalize the source before designing`
+  - `3. Decide the content mode`
+- source assets and build the shell
+  - `4. Build the shot list`
+  - `4.5. Source and store the image assets`
+  - `5. Fix structure before effects`
+- finish the page
+  - `6. Establish one motion system`
+  - `7. Add music after layout is stable`
+  - `8. Mobile pass`
+  - `9. Naming and deployment hygiene`
+  - `10. Final QA`
+- cold-start execution order
+  - `11. Strict cold-start execution checklist`
+
 ## 1. Protect the project boundary first
 
 Before doing any styling:

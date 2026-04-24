@@ -2,6 +2,26 @@
 
 Use this reference when you need to source, generate, validate, or replace visuals and BGM for an editorial travel page.
 
+## Quick map
+
+- source order and search strategy
+  - `1. Source priority`
+  - `4. Search strategy`
+  - `4.2. Download fallback workflow`
+- image quality bar
+  - `2. Hero image rules`
+  - `3. Day or beat image rules`
+  - `Editorial beauty filter`
+  - `Support spread rules`
+- asset storage and generation fallback
+  - `4.5. Local asset storage`
+  - `5. Generation fallback`
+- soundtrack and playback
+  - `6. Music direction workflow`
+  - `7. Audio integration rules`
+  - `8. Local file replacement`
+  - `10. Final media QA`
+
 ## 1. Source priority
 
 ### Images

@@ -2,6 +2,23 @@
 
 Use these as starting patterns, not rigid templates. Keep the structure, then tune the numbers.
 
+## Quick map
+
+- Hero shell and title axis
+  - `1. Page shell with blurred global background + clear Hero image`
+  - `2. Hero title with the dot as the optical axis`
+  - `3. Scroll hint and fixed music control that do not disturb Hero centering`
+- itinerary UI patterns
+  - `4. Inline editorial tags and itinerary pills`
+  - `5. Timeline layout with line segments between nodes only`
+  - `6. Editorial route guidance block`
+- media and surface treatment
+  - `7. Small-radius image surface with subtle parallax`
+  - `8. Minimal editorial surface rules`
+- playback and font delivery
+  - `9. Ambient audio engine notes`
+  - `11. Font delivery recipes for Vite travel pages`
+
 ## 1. Page shell with blurred global background + clear Hero image
 
 ```tsx
