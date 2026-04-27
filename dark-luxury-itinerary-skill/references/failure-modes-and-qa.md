@@ -36,6 +36,8 @@ Examples:
 - boxy module-heavy layout
 - visible system language in the rendered page
 - flat, random, or low-quality imagery
+- Hero text that blends into the cover because image tone and type color are too close
+- mathematically centered but optically crooked Hero titles
 
 Do not “average out” a visually failed run just because the planning work backstage was strong.
 
@@ -50,15 +52,18 @@ Do not:
 - center each Hero line separately instead of aligning one optical stack
 - let the Hero cluster sit too low on mobile
 - accept a cover where text readability is poor but can supposedly be fixed later
+- keep a Hero cover whose brightest / darkest areas fight the title so hard that the title needs effort to read
+- keep asymmetric split titles if the center point looks false or visually dragged to one side
 
 If the Hero feels wrong, inspect in this order:
 
 1. background layer structure
 2. clear Hero cover mask fade
 3. shared width shell for overline, title, subtitle
-4. title scale and line breaks on mobile
-5. text shadow strength
-6. breathing room before the second screen starts
+4. image tone versus title contrast
+5. title scale, tracking, and line breaks on mobile
+6. text shadow strength
+7. breathing room before the second screen starts
 
 ## 3. Typography mistakes
 
@@ -69,6 +74,8 @@ Do not:
 - allow desktop day titles to wrap casually into weak two-line headings
 - use raw system labels such as `validation`, `route topology`, or `confidence` in visible copy
 - let English subtitle tracking grow so wide that it destabilizes the Chinese Hero
+- keep a split Hero title just because the wording sounded elegant if the composition no longer looks centered
+- assume the fix is always spacing; sometimes the right answer is to shorten or rename the title
 
 Typography usually fails for one of two reasons:
 

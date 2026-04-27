@@ -70,10 +70,17 @@ Shared traits:
 - title stack inside one width shell
 - subtitle aligned to the same visual center
 - visible text shadow over photography
+- Hero image tone and title color stay clearly separable at first glance
 - no weak hairline typography on mobile
 - mobile titles are shortened or resized before they are allowed to break awkwardly
 - overline travel marks keep their decorative side lines unless a benchmark explicitly proves a cleaner alternative
 - raw system labels never appear in the visible design language
+
+Optical-centering rule:
+
+- do not trust mathematical center alone when title wording is asymmetric
+- if left and right word groups have different visual weight, rebalance with shell width, tracking, type size, or wording simplification
+- if the composition still feels off, simplify the title copy instead of shipping a crooked Hero
 
 ### 4. Content is structured, not dumped
 
@@ -181,6 +188,8 @@ A new route-guide site passes only if it reaches all of these:
 16. the mobile Hero still feels like a composed cover, not a broken stack of oversized characters
 17. the first visible support sections still feel airy and editorial, not like dashboard cards under a poster
 18. the player still looks like the same benchmark-family black-vinyl object, not a newly invented music widget
+19. the Hero title is readable immediately against the cover image without squinting
+20. if the Hero uses split wording around a center point, the title still feels optically centered rather than mathematically but awkwardly aligned
 
 If the site only proves “I can deploy a React page”, it fails this benchmark.
 If it uses low-resolution placeholders, flat SVG fallback art, clumsy route graphics, or fake media controls, it fails this benchmark too.

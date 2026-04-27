@@ -68,6 +68,8 @@ Examples:
 12. Do not invent dashboard cards, KPI blocks, validation panels, or repeated generic module shells that push the page toward AI UI.
 13. If the route-loop, timeline, or vinyl player cannot reach benchmark quality, simplify or omit it instead of shipping a weak version.
 14. A cold-start validation is not complete without a public deploy URL or a clearly evidenced blocker, plus browser-verified visual review.
+15. Hero background image tone and Hero title color must maintain strong enough contrast to read at first glance; if the image is too close in value, fix it with image choice, overlay tuning, or text shadow before shipping.
+16. Hero title must be optically centered as one composition. If the wording creates an asymmetric center, correct it with size, tracking, shell width, or simplified wording; if that still fails, recommend better wording to the user instead of forcing a broken title.
 
 ## Choose the path
 
