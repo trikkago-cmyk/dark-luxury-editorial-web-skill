@@ -34,6 +34,10 @@ This update mainly upgrades three things:
 - Better aesthetic judgment: it no longer treats “factually correct” as good enough. The rules we refined through real projects are now baked into the skill: Hero-to-second-screen continuity, breathing room, timeline node quality, vinyl-player consistency, section-matched imagery, and music mood suggestions. In short, it is better at avoiding generic AI-UI drift.
 - Better long-term reusability: the skill itself was restructured around progressive disclosure. The main file is now lighter and acts as an entry router, while planning, writing, visual, media, and QA details live in references that are loaded only when needed. That makes the skill easier for other agents and future projects to use reliably.
 
+There is also one subtle but very important Hero upgrade in this release:
+
+- Better first-glance readability: the Hero is no longer allowed to be “atmospheric but hard to read.” The skill now explicitly enforces enough contrast between the cover image and the title color, and will correct weak readability with image choice, overlays, or text shadow. It also treats title centering as an optical problem, not a purely mathematical one, which means asymmetric wording must be balanced properly or rewritten instead of being forced into a visibly crooked cover.
+
 In one sentence, 2.0 is no longer only a “turn travel notes into a webpage” skill.
 It is now a fuller workflow for understanding travel intent, planning the trip, choosing assets, and shipping the final editorial site.
 
